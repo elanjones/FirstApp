@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'tweets/_form'
 
+  resources :relationships
+
   resources :tweets
 
   devise_for :users
